@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+
+/*------VARIAVEIS  GLOBAIS-----*/
+
+:root{
+    --estiloTituloH1:'Roboto Slab', serif;
+    --estiloTexto: 'Poppins', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:var(--estiloTexto);
+    background: linear-gradient(to bottom, #8a2be2, #4b0082); /* Gradiente roxo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Isso centraliza o conteúdo verticalmente */
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: var(--estiloTituloH1);  
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 800px; /* Define a largura máxima do carrossel */
+}
+
+.carousel {
+    height: 800px;/*mudar depois o tamanho para que fique responsivo*/
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    flex: 0 0 100%;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente*/
+}
+
+.slide p{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.slide:nth-child(odd) {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.slide:nth-child(even) {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
