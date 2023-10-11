@@ -3,88 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="/image/batimento-cardiaco.png" type="icon">
-
-
-    <title>APTA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>apta</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">Home</a>                
-            <a href="./about.html">About</a>
-            <a>Experience</a>
-        </nav>
-    </header>
+    <div class="bg-home">
+        <header>
+            <nav class="header-content container">
+                <div class="header-icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope-open fa-2x"></i>
+                    </a>
+                </div>
 
-    <main>
-        <div class="carousel-controls">
-            <button id="prevBtn"><img src="./image/seta-esquerda.png"></button>
-        </div>
+                <div class="header-logo">
+                    <img src="assets/logo.svg" alt="logo da barbearia">
+                </div>
 
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide">
-                    <h1>
-                        APTA MEDICINA E SEGURANÇA DO TRABALHO
-                    </h1>
-                    <p>
-                        Somos uma empresa de gestão de saúde do trabalho, que busca entregar qualidade, agilidade e comprometimento. Onde o maior valor é a saúde e a integridade física dos empregados e empregadores dentro das legislações vigentes.
-                    </p>
-                    <div class="social_midia">
-                        <a href="#">
-                            <img id="social_img" src="./image/whatsapp.png" alt="Whatsapp">
-                        </a>
-                        <a href="#">
-                            <img id="social_img" src="image/facebook.png" alt="facebook">
-                        </a>
-                        <a href="#">
-                            <img id="social_img" src="image/instagram.png" alt="instagram">
-                        </a>
-                    </div>    
+                <div>
+                    <a class="header-button" href="#">
+                        Entrar em contato
+                    </a>
                 </div>
-                <div class="slide">
-                    <h1>
-                        VISÃO
-                    </h1>
-                    <p>
-                        Ser reconhecida como a melhor empresa de gestão de medicina ocupacional, pela excelência nos serviços prestados. Para isso nossos colaboradores são capacitados e treinados, com experiência em saúde e segurança do trabalho. 
-                    </p>
+            </nav>
+            
+            <main class="hero container">
+                <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E PERSONALIDADE.</h1>
+                <p>horario de funcionamento</p>
+                <a class="button-contact" target="_blank">
+                    Entrar em contato
+                </a>
+            </main>
+        </header>
+    </div>
 
-                </div>
-                <div class="slide">
-                    <h1>
-                        MISSÃO
-                    </h1>
-                    <p>
-                        Ser uma empresa de referência em gestão de medicina do trabalho, promovendo a saúde e o bem estar de nossos clientes e seus colaboradores.
-                    </p>
-                </div>
-                <div class="slide">
-                    <h1>
-                        VALORES DA EMPRESA
-                    </h1>
-                    <ul> 
-                        <li>Pessoas</li>
-                        <li>Profissionalismo</li>                     
-                        <li>Empatia</li>                      
-                        <li>Ética</li>                      
-                        <li>Confiabilidade</li>                      
-                        <li>Responsabilidade</li>  
-                        <li>Inovação</li>                    
-                    </ul>
-                </div>
+    <section class="about">
+        <div class="container about-content">
+            <div>
+                <img src="assets/images.svg" alt="foto cabelos">
+            </div>
+            <div class="about-description">
+                <h2>Sobre</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit voluptatem beatae quasi tempore facilis itaque eveniet blanditiis quia sequi aliquid repudiandae, neque, temporibus illum dolores harum tempora voluptates! Illo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magnam est, id, consequatur numquam soluta aperiam porro modi magni iste dolore, quos rerum accusamus reiciendis minus velit cum commodi impedit?</p>
             </div>
         </div>
+    </section>
 
-        <div class="carousel-controls">
-            <button id="nextBtn"><img src="./image/seta-direita.png"></button>
+    <section class="services">
+        <div class="services-content container">
+            <h2>Serviços</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
         </div>
-    </main>
-        <footer>
-            <p>&copy; Desenvolvido por Matheus Soares e Wesley</p>
-        </footer>
-    <script src="script.js"></script>
+
+        <section class="haircuts">
+            <div class="haircut">
+                <img src="assets/corte1.png" alt="corte1">
+                <div class="haircut-info">   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/corte2.png" alt="corte1">
+                <div class="haircut-info">   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/corte3.png" alt="corte1">
+                <div class="haircut-info">   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="haircuts">
+            <div class="haircut">
+                <img src="assets/corte1.png" alt="corte1">
+                <div class="haircut-info">   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/corte2.png" alt="corte1">
+                <div class="haircut-info">   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
+                </div>
+            </div>
+
+            <div class="haircut">
+                <img src="assets/corte3.png" alt="corte1">
+                <div class="haircut-info">   
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nulla laborum consectetur voluptatem doloribus incidunt accusamus. Fugiat adipisci distinctio sapiente id recusandae, at reiciendis culpa sunt facere asperiores, repudiandae doloribus?</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <diV class="services">
+        <h2>Venha nos conhecer</h2>
+    </diV>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-envelope-open fa-2x"></i>
+            </a>
+        </div>
+
+        <div>
+            <img src="assets/logo.svg" alt="logo branca">
+        </div>
+
+        <p>Copyright 2023 | Apta Medicina Ocupacional - Todos direitos reservados</p>
+    </footer>
+
+    <a href="#" class="btn-whatsapp" target="_blank">
+        <img src="assets/whatssapp.svg" alt="chat whatssapp">
+        <span class="tooltip-text">entre em contato</span>
+    </a>
 </body>
 </html>
